@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+<head>
+	<title>Equation Solver!</title>
+	<link rel="stylesheet" type="text/css" href="css/cssfile.css" />
+	<script type="text/javascript" src = "js/jsfile.js"></script>
+	<link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+	<div id="top"><h1><center>Welcome to SolveMate!!</center></h1></div>
+	<form>
+		<center><table class="features-table">
+		<tr>
+			<td>
+			<p>Select the Equation Type</p>
+			<input type="radio" id="eqntype1" name="eqntype" value="quad" checked> Quadratic Equation<br>
+			<input type="radio" id="eqntype2" name="eqntype" value="linear"> Linear Equation<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Enter The Equation: </p><input id="eqn" type="textinput" style="width:100%"></input>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<input id="calc" type="button" value="Display Solutions!!" onclick="equation()"></input></br></br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Solution for Equation is: </p><input id="Answer" type="text" readonly="readonly" style="width:100%"></input></br>
+			<br><input type="button" value="Reset" onclick="cancel()"></input>
+			</td>
+		</tr>
+		</table></center>
+	</form>
+</body>
+</html>

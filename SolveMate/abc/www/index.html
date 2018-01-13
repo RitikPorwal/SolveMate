@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+<!--<link rel="icon" href="ico.png">
+    <link rel="stylesheet" type="text/css" href="css/filecss.css" />-->
+<head>
+	<title>Welcome!!</title>
+</head>
+
+<!--<link rel="text/javascript" href = "jsfile.js"> -->
+<style>
+
+body{
+background-color: rgb(176, 219, 0);
+color: black;
+padding:0px;
+margin:0px;
+}
+#main{
+background-color: rgb(220, 249, 112);
+border: solid white 2px;
+margin-left: 300px;
+margin-right: 300px;
+font-size: 20px;
+}
+
+#list1{
+padding: 20px;
+margin-bottom:0;
+padding-top:10px;
+padding-left: 100px;
+}
+
+#list2{
+padding: 20px;
+padding-left: 100px;
+padding-right: 100px;
+padding-top: 5px;
+}
+
+#list2:hover{
+background-color: rgb(242, 249, 137);
+}
+
+#list1:hover{
+background-color: rgb(242, 249, 137);
+}
+
+#Footer div{
+float: left;
+width: 48%;
+margin-left: -5px;
+margin-right: -12px;
+margin-top: 5px;
+height: 5%;
+padding: 20px;
+background-color: rgb(176, 219, 0);
+}
+
+#Footer button{
+color: black;
+background-color: white;
+padding: 10px;
+width: 100px;
+}
+
+#Footer button:hover{
+color: white;
+background-color: black;
+}
+
+</style>
+<body>
+<h1 style="color:white;background-color:black" ><center>Welcome to Courses Page!!</center></h1>
+<article id="main">
+<h3 style="background-color:white;text-align:center">Course Content!!</h3>
+	<section id="list1">
+		<ul>
+			<li><b>Module 1:</b> Introduction to Mobile Application</li>
+			<li><b>Module 2:</b> Introduction to Android programming</li>
+			<li><b>Module 3:</b> Android software development</li>
+			<li><b>Module 4:</b> Android Framework</li>
+		</ul>
+	</section>
+<h3 style="background-color:white;text-align:center">Terminologies</h3>
+	<section id="list2">
+		<dl>
+			<dt><b>Introduction to Mobile Application:</b></dt>
+				<dd><p></p>A brief history of mobile, Mobile ecosystem, Designing for context , Developing a Mobile Strategy, Mobile Information Architecture, Mobile Design, Types of mobile application.</dd>
+			<dt><p></p><b>Introduction to Android programming:</b></dt>
+				<dd><p></p>Android toolkit , Java for android, components of an Android Application.</dd>
+			<dt><p></p><b>Android software development:</b></dt>
+				<dd><p></p>Eclipse Concepts and Terminology, Eclipse Views and Perspectives, Eclipse and Android, Effective java for Android</dd>
+			<dt><p></p><b>Android Framework:</b></dt>
+				<dd><p></p>Building a View, Fragments and Multiplatform Support, Drawing, Handling and Persisting Data.</dd>
+		</dl>
+	</section>
+</article>
+
+<div id="Footer">
+<div align="left">
+</div>
+<div align="right">
+<a href="page_2.html"><button type="block">Next!</button></a>
+</div>
+</div>
+
+</body>
+</html>
